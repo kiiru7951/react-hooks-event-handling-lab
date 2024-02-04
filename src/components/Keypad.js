@@ -1,8 +1,17 @@
 // Code Keypad Component Here
 
 function Keypad (){
+    function handleChange(event) {
+    event.preventDefault();
+    console.log("Entering password...")
+2      }
     return (
-        <div></div>
+        <input
+        type="password"
+        name="password"
+        onChange={handleChange}
+        placeholder="Enter password..."
+        />
     )
 }
 
